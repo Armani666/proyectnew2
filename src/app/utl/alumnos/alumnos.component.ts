@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { AlumnosUtl } from '../Interface/utl.interface';
+import { UtlService } from '../service/utl.service';
 
 
 @Component({
@@ -8,8 +9,12 @@ import { AlumnosUtl } from '../Interface/utl.interface';
   styleUrls: ['./alumnos.component.css']
 })
 export class AlumnosComponent implements OnInit {
-@Input() alumnosUtl:AlumnosUtl[]=[];
-  constructor() { }
+/* @Input() alumnosUtl:AlumnosUtl[]=[]; */
+get alumnos(){
+  return this.alumnosUtl.alumnosUtl;
+}
+
+  constructor(private alumnosUtl:UtlService) { }
 
   ngOnInit(): void {
   }
