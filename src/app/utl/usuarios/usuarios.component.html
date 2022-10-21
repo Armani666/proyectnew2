@@ -1,0 +1,28 @@
+<h1>ALUMNOSIEVN1003</h1>
+<hr>
+<hr>
+<div class="container">
+    <div class="col">
+<div class="row">
+<form (ngsubmit)="guardarUsuario()" [formGroup]="forms">
+<div>
+    <mat-form-field appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input formControlName="Nombre" matInput>
+    </mat-form-field>
+</div>
+</form>
+</div>
+<div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input formControlName="Password"type="password" matInput>
+        </mat-form-field>
+</div>
+<div>
+    <button mat-button color="primary"> Guardar</button>
+    <a mat-stroked-button>Cancelar</a>
+</div>
+</div>
+
+

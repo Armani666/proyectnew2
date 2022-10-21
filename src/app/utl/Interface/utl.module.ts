@@ -16,7 +16,7 @@ import { AgregarComponent } from '../agregar/agregar.component';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
   ]
 })
 export class UtlModule { }

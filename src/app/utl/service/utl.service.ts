@@ -7,11 +7,9 @@ providedIn: 'root'
 })
 export class UtlService {
 
+    
 constructor() {}
 
-mostrarSaludo(){
-console.log('Hola mundo');
-}
 private _alumnosUtl:AlumnosUtl[]=[
 { 
 nombre:'Mario',
@@ -32,5 +30,9 @@ return [...this._alumnosUtl];
 
 agregarAlumno(alumno:AlumnosUtl){
     this._alumnosUtl.push(alumno);
+}
+
+mostrarSaludo(){
+    console.log('saludo Service')
 }
 }
